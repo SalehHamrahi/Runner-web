@@ -1,5 +1,7 @@
 # Runner Tournament Platform
 
+ChatGPT has been utilized in this project.
+
 Runner is a local tournament manager and analytics platform for RoboCup 2D matches. It handles team validation, tournament execution, match result storage, RCG/RCL parsing, analytics, replay and web visualization, reports, Discord notifications, simulation utilities, and an optional plugin system.
 
 [فارسی](README-Fa.md) · [Quality & Release](QUALITY.md) · [Plugin API](docs/PLUGIN_API.md)
