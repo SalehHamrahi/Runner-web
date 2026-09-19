@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0f1d">
+  <title>Runner · Match Intelligence</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">R</div>
+        <div><strong>RUNNER</strong><span>RCSS MATCH INTELLIGENCE</span></div>
+      </div>
+      <nav>
+        <button class="nav-btn active" data-view="dashboard"><span>⌂</span> Dashboard</button>
+        <button class="nav-btn" data-view="matches"><span>◈</span> Matches</button>
+        <button class="nav-btn" data-view="tournaments"><span>◆</span> Tournaments</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="status-dot"><i></i> Runner Web</div>
+        <small>web UI · Analytics UI</small>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">ROBOCUP 2D · DATA PLATFORM</div>
+          <h1 id="page-title">Dashboard</h1>
+        </div>
+        <div class="top-actions">
+          <div class="theme-switcher" aria-label="Theme selector">
+            <span class="theme-label">Theme</span>
+            <select id="theme-select" class="theme-select">
+              <option value="midnight">Midnight</option>
+              <option value="emerald">Emerald</option>
+              <option value="royal">Royal</option>
+              <option value="sunset">Sunset</option>
+              <option value="mono">Mono</option>
+            </select>
+          </div>
+          <button class="ghost-btn" id="refresh">↻ Refresh</button>
+        </div>
+      </header>
+
+      <section id="dashboard" class="page active"></section>
+      <section id="matches" class="page"></section>
+      <section id="tournaments" class="page"></section>
+      <section id="match" class="page"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
